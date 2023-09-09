@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RSS reader</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="top">
+        <form action="#" method="post" id="delInfo">
+            <p id="name">Search for profile</p><br>
+            <div id="inputB">
+                <input type="text" name="nickname" id="nickname">
+                <input type="submit" onClick="newDel()" value="Search" id="submitBt">
+            </div>
+        </form>
+    </div>
+    <div id="main">
+        <div id="title"></div>
+        <ul id="item"></ul>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+
+</html>
