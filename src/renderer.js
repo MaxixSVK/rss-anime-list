@@ -38,18 +38,15 @@ if (!nickname2 == "") {
                 li.className = "listItem";
 
                 const title = item[i].getElementsByTagName('title')[0].innerHTML;
-                const description = item[i].getElementsByTagName('description')[0].innerHTML.replace("<![CDATA[", "").replace("<![CDATA[", "]]>");
+                const description = item[i].getElementsByTagName('description')[0].innerHTML.replace("<![CDATA[", "").replace("]]>", "");
                 const link = item[i].getElementsByTagName('link')[0].innerHTML;
                 const pubdate = item[i].getElementsByTagName('pubDate')[0].innerHTML.replace("-0700", "(UTC -7)");
 
                 if (true) {
                     li.innerHTML =
                         `
-            <h3>${title}</h3>
-            <p>${description}</p>
-            <p>Edited: ${pubdate}</p>
-            <a href="${link}">More information</a>
-
+            <a class="AName" "href="${link}">${title}</a>
+            <a class="ADate">${description}</a>
             `;
                 }
 

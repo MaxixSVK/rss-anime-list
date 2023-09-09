@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     user-select: none;
+    list-style-type: none;
 }
 
 html::-webkit-scrollbar {
@@ -42,21 +43,25 @@ body {
 #inputB {
     float: right;
     margin-right: 35px;
-    padding-top: 10px;
+    margin-top: 7px;
 }
 
 #nickname {
-    background-color: #176B87;
-    height: 30px;
-    border: none;
-    border-radius: 15px;
+    font-size: 18px;
+    background-color: #053B50;
+    border: 3px solid white;
+    color: white;
+    border-radius: 5px;
+    height: 25px;
 }
 
 #submitBt {
-    background-color: #176B87;
-    height: 30px;
+    padding-top: 1px;
+    background-color: white;
+    height: 31px;
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
+    width: 50px;
 }
 
 #main {
@@ -67,19 +72,29 @@ body {
 }
 
 #item {
-    padding: 5px;
-    margin-left: 30px;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 #item li {
     border-bottom: 1px solid #ccc;
 }
 
-.listItem h3 {
-    padding-top: 20px;
+.listItem {
+    height: 80px
 }
 
-.listItem p {
-    padding-top: 5px;
-    padding-bottom: 5px;
+.AName {
+    padding-top: 25px;
+    font-size: 25px;
+    float: left;
+    text-decoration: underline;
+    color: white;
+
+}
+
+.ADate {
+    padding-top: 27px;
+    font-size: 22px;
+    float: right;
 }
