@@ -4,6 +4,8 @@ Please note that this program is still under development
 ## Features
 - View anime watch list from "my anime list" website - only thing you need is profile name
 
+![Screenshot](https://i.imgur.com/OkFVdgB.png)
+
 ## Installation
  - You need to have [node.js](https://nodejs.org/) installed on your machine (tested version 18.17.1)
 
