@@ -1,16 +1,16 @@
 var nickname = ""
 
-function newDel() {
-    nickname = document.getElementById('nickname').value;
+function search() {
+    nickname = document.getElementById('topSearchNickname').value;
     localStorage.setItem("nickname", nickname)
 }
 
 var nickname2 = localStorage.getItem("nickname");
-newDel()
+search()
 
 if (!nickname2 == "") {
-    let text = document.getElementById("name").innerHTML;
-    document.getElementById("name").innerHTML = text.replace("Search for profile", `${nickname2}'s watch history`);
+    let text = document.getElementById("topName").innerHTML;
+    document.getElementById("topName").innerHTML = text.replace("Search for profile", `${nickname2}'s watch history`);
     loadXMLFeed = () => {
         const url = `https://myanimelist.net/rss.php?type=rw&u=${nickname2}`;
         fetch(url)
@@ -45,9 +45,10 @@ if (!nickname2 == "") {
                 if (true) {
                     li.innerHTML =
                         `
+            <div>
             <a class="AName" "href="${link}">${title}</a>
             <a class="ADate">${description}</a>
-            `;
+            </div>`;
                 }
 
                 list.appendChild(li);

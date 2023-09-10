@@ -5,6 +5,7 @@
     padding: 0;
     user-select: none;
     list-style-type: none;
+    color: white;
 }
 
 html::-webkit-scrollbar {
@@ -22,79 +23,74 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-    background-color: #176B87;
+    background-color: #2A2B2E;
 }
 
 #top {
+    margin: 30px 50px 0px;
+    background-color: #5A5A66;
     height: 80px;
-    color: #EEEEEE;
-    margin: 1%;
     border-radius: 15px;
-    background-color: #053B50;
 }
 
-#name {
-    padding-left: 35px;
-    padding-top: 28px;
+#topName {
     float: left;
-    font-size: 24px;
+    margin: 22px 0px 0px 25px;
+    font-size: 30px;
 }
 
-#inputB {
-    float: right;
-    margin-right: 35px;
-    margin-top: 7px;
-}
-
-#nickname {
-    font-size: 18px;
-    background-color: #053B50;
-    border: 3px solid white;
-    color: white;
-    border-radius: 5px;
-    height: 25px;
-}
-
-#submitBt {
-    padding-top: 1px;
-    background-color: white;
-    height: 31px;
+#topSearchNickname{
+    background-color: #2A2B2E;
+    border-radius: 15px;
+    height: 36px;
     border: none;
-    border-radius: 5px;
-    width: 50px;
+    float: right;
+    margin: 22px 10px 0px 0px;
+    width: 200px;
+}
+
+#topSearchSubmit {
+    border: none;
+    background-color: #A4C2A8;
+    border-radius: 15px;
+    float: right;
+    margin: 22px 25px 0px 0px;
+    height: 36px;
+    width: 36px;
+}
+
+#hold {
+    height: 80px;
 }
 
 #main {
-    color: #EEEEEE;
-    margin: 1%;
     border-radius: 15px;
-    background-color: #053B50;
+    margin-top: 30px;
+    background-color: #5A5A66;
 }
 
 #item {
-    margin-left: 35px;
-    margin-right: 35px;
+    margin: 0px 25px 0px;
 }
 
 #item li {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #A4C2A8;
 }
 
 .listItem {
-    height: 80px
+    height: 70px;
 }
 
 .AName {
-    padding-top: 25px;
-    font-size: 25px;
+    line-height: 70px;
+    text-align: center;  
+    font-size: 24px;
     float: left;
-    text-decoration: underline;
-    color: white;
-
 }
 
 .ADate {
-    padding-top: 27px;
-    font-size: 22px;
+    line-height: 70px;
+    text-align: center;  
+    font-size: 24px;
     float: right;
 }
