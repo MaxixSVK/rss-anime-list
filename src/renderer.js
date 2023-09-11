@@ -45,10 +45,10 @@ if (!nicknameLocal == "") {
                 if (true) {
                     li.innerHTML =
                         `
-            <a><div>
+            <div>
             <a class="AName" href="${link}">${title}</a>
             <a class="ADate">${description}</a>
-            </div></a>`;
+            </div>`;
                 }
 
                 list.appendChild(li);
