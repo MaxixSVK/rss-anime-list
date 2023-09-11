@@ -81,7 +81,12 @@ body {
     height: 70px;
 }
 
+.listItem:hover  {
+    margin-left: 5px;
+}
+
 .AName {
+    text-decoration: none;
     line-height: 70px;
     text-align: center;  
     font-size: 24px;
