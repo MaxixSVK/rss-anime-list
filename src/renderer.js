@@ -10,9 +10,9 @@ search()
 
 if (!nicknameLocal == "") {
     let text = document.getElementById("topName").innerHTML;
-    document.getElementById("topName").innerHTML = text.replace("Search for profile", `${nickname2}'s watch history`);
+    document.getElementById("topName").innerHTML = text.replace("Search for profile", `${nicknameLocal}'s watch history`);
     loadXMLFeed = () => {
-        const url = `https://myanimelist.net/rss.php?type=rw&u=${nickname2}`;
+        const url = `https://myanimelist.net/rss.php?type=rw&u=${nicknameLocal}`;
         fetch(url)
             .then(response => response.text())
             .then(data => {
