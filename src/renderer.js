@@ -2,13 +2,13 @@ var nickname = ""
 
 function search() {
     nickname = document.getElementById('topSearchNickname').value;
-    localStorage.setItem("nickname", nickname)
+    localStorage.setItem("nicknameLocal", nickname)
 }
 
-var nickname2 = localStorage.getItem("nickname");
+var nicknameLocal = localStorage.getItem("nicknameLocal");
 search()
 
-if (!nickname2 == "") {
+if (!nicknameLocal == "") {
     let text = document.getElementById("topName").innerHTML;
     document.getElementById("topName").innerHTML = text.replace("Search for profile", `${nickname2}'s watch history`);
     loadXMLFeed = () => {
